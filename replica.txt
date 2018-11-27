@@ -1,0 +1,29 @@
+	@Override
+	public HashMap<String, String> registerReplica(String hostname, int portNumber, IFileReplica replica) throws IOException {
+
+		// if the server is not lock
+		try {
+			this.isServerLocked.readLock().lock();
+
+			// create a replica object
+			CustomReplica customReplica = new CustomReplica(hostname, portNumber, replica);
+			// then add it to the list of replicas
+			this.theListOfReplicas.add(customReplica);
+
+			// the HashMap of filename to its contents
+			HashMap<String, String> listOfFiles = new HashMap<>();
+
+			String filename = "", filecontent = ""; 
+			for(CustomFile aFile: this.theListOfFiles) {
+				filename = aFile.getName();
+				filecontent = aFile.getContent();
+
+				listOfFiles.put(filename, filecontent);
+			}
+
+			return listOfFiles;
+		}
+		finally {
+			this.isServerLocked.readLock().unlock();
+		}
+	}
