@@ -1,4 +1,6 @@
-	/**
+	// this line of code is added by User3
+   
+   /**
 	 * Initializes the server with the state of the files it cares about
 	 *
 	 * @param files list of the files
@@ -12,3 +14,5 @@
 			// and add to the customFile object
 		}
 	}
+   
+   // User3 edited this file on 2018/11/27
