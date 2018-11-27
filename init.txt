@@ -1,4 +1,5 @@
-	/**
+// this line created for conflicting purposes.
+   /**
 	 * Initializes the server with the state of the files it cares about
 	 *
 	 * @param files list of the files
