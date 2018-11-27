@@ -1,0 +1,65 @@
+* The outter div for countdownEvent*/
+#countdownEvent {
+   text-align: center;
+   padding: 0px 5px 5px 5px;
+   width: 450px;
+   border-radius: 5px;
+   margin:0 auto;
+   box-shadow: 8px 8px 5px #888888;
+}
+
+/* Even Title*/
+#eventTitle{
+  color: #B92022;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 40px 0px 20px;
+  text-shadow: 2px 2px #888888;
+}
+
+/* Event Date*/
+#eventDate {
+   color: #FFF;
+   font-size: 20px;
+}
+
+/* Clock area*/
+#clockdiv{
+   font-family: sans-serif;
+   color: #FFF;
+   display: inline-block;
+   font-weight: bold;
+   text-align: center;
+   font-size: 30px;
+}
+
+/* Days, hours, minutes, seconds area*/
+#clockdiv > div{
+   margin-right: 10px;
+   padding: 10px;
+   border-radius: 3px;
+   /*background: #00BF96;*/
+   border: 1px solid #000000;
+   display: inline-block;
+   text-shadow: 2px 2px #888888;
+}
+
+#clockdiv div > span{
+   padding: 15px;
+   border-radius: 3px;
+   background: #FFFFFF;
+   display: inline-block;
+   color: #000000;
+}
+
+.smalltext{
+   padding-top: 5px;
+   font-size: 16px;
+}
+
+#lineSeperator {
+   border: none;
+   height: 1px;
+   color: white;
+   background: white;
+}
