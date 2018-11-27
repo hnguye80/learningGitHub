@@ -1,3 +1,5 @@
+# Adding new line in the file
+
 % cd kern/conf
 % ./config ASST0
 % cd ../compile/ASST0
@@ -12,3 +14,4 @@
 % cd ~/os161/root
 % sys161 kernel
 p /sbin/poweroff <return>
+
