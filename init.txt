@@ -1,0 +1,14 @@
+	/**
+	 * Initializes the server with the state of the files it cares about
+	 *
+	 * @param files list of the files
+	 */
+	public void init(List<Path> files) {
+		for (Path aFile: files) {
+			CustomFile customFile = new CustomFile(aFile);
+			this.theListOfFiles.add(customFile);
+
+			//Question: do we need to get the content of the file at this step
+			// and add to the customFile object
+		}
+	}
